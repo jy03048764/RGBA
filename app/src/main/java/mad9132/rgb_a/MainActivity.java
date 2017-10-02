@@ -38,7 +38,9 @@ public class MainActivity extends Activity implements Observer, SeekBar.OnSeekBa
     private TextView            mColorSwatch;
     private RGBAModel           mModel;
     private SeekBar             mRedSB;
-    //TODO: declare private members for mGreenSB, mBlueSB, and mAlphaSB
+    private SeekBarG             mGreenSB;
+    private SeekBarB             mBlueSB;
+    private SeekBarA             mAlphaSB;
     private TextView            mRedTV;
 
     @Override
@@ -63,7 +65,9 @@ public class MainActivity extends Activity implements Observer, SeekBar.OnSeekBa
         // reference each View
         mColorSwatch = (TextView) findViewById( R.id.colorSwatch );
         mRedSB = (SeekBar) findViewById( R.id.redSB );
-        //TODO: reference the remaining <SeekBar>s: green, blue and alpha
+        mGreenSB = (SeekBar) findViewById( R.id.greenSB );
+        mBlueSB = (SeekBar) findViewById( R.id.blueSB );
+        mAlphaSB = (SeekBar) findViewById( R.id.alphaSB );
         mRedTV = (TextView) findViewById( R.id.red );
 
         // set the domain (i.e. max) for each component

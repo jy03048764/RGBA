@@ -50,6 +50,15 @@
         android:layout_below="@+id/redSB"
         android:layout_alignParentStart="true" />
 
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/green"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="27dp"
+        android:layout_toEndOf="@+id/green" />
+
     <!--TODO: SeekBar for blue -->
 
     <!--TODO: TextView for blue -->
